@@ -1,0 +1,33 @@
+/*
+
+ROBOTO FLEX
+
+AXIS    MIN     MAX     STEP    DEFAULT
+opsz    8       144     0.1     14          Optical Size: Adapt the style to specific text sizes. At smaller sizes, letters typically become optimized for more legibility. At larger sizes, optimized for headlines, with more extreme weights and widths. In CSS this axis is activated automatically when it is available. 
+slnt    -10     0       1       0           Slant: Adjust the style from upright to slanted, also known to typographers as an 'oblique' style. Rarely, slant can work in the other direction, called a 'backslanted' or 'reverse oblique' style. 
+wdth    25      151     0.1     100         Width: Adjust the style from narrower to wider, by varying the proportions of counters, strokes, spacing and kerning, and other aspects of the type. This typically changes the typographic color in a subtle way, and so may be used in conjunction with Width and Grade axes. 
+wght    100     1000    1       400         Weight: Adjust the style from lighter to bolder in typographic color, by varying stroke weights, spacing and kerning, and other aspects of the type. This typically changes overall width, and so may be used in conjunction with Width and Grade axes. 
+GRAD    -200    150     1       0           Grade: Finesse the style from lighter to bolder in typographic color, without any changes overall width, line breaks or page layout. Negative grade makes the style lighter, while positive grade makes it bolder. The units are the same as in the Weight axis. 
+XTRA    323     603     1       468         Parametric Counter Width: Alters the transparent forms inside and around glyphs in the X dimension. One application is in fine-tuning justification, as it changes the number of characters per line.
+YOPQ    25      135     1       79          Parametric Thin Stroke: Alters stroke widths at their thinnest parts, typically in the Y dimension for the Latin script. One use-case is to improve legibility in very small sized text, because it can lower stroke contrast.
+YTAS    640     854     1       750         Parametric Ascender Height: Alters the volume of all space within the ascenders’ vertical alignment zone.
+YTDE    -305    -98     1       -203        Parametric Descender Depth: Alters the depth of the space within the descenders’ vertical alignment zone, which has a negative value being below the baseline.
+YTFI    560     788     1       738         Parametric Figure Height: Alters the vertical space of figures. It can be used for aligning figures to other vertical zones.
+YTLC    416     570     1       514         Parametric Lowercase Height: Alters the volume of all space within the lowercase's vertical alignment zone: the vertical space inside counters of glyphs and the space in their sidebearings. (This adds more space vertically instead of changing the side bearings like tracking does). This is not truly an “x-height axis," since it only adjusts space vertically, and x-height proportions are formed by the relationships of uppercase, lowercase, ascenders and descenders, as well as horizontal forms. There are parametric axes for all of these.
+YTUC    528     760     1       712         Parametric Uppercase Height: Alters the volume of all space within the uppercase's vertical alignment.
+
+Sources:
+- https://github.com/googlefonts/roboto-flex
+- https://material.io/blog/roboto-flex
+- https://fonts.google.com/specimen/Roboto+Flex
+
+*/
+
+@font-face {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: block;
+  src: url(https://fonts.cdnfonts.com/s/84002/RobotoFlex[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght].woff) format('woff');
+}

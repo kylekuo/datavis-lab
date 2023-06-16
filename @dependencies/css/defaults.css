@@ -1,0 +1,66 @@
+@import url('../fonts/roboto-flex.css');
+
+/* TYPEFACE */
+
+html {
+	font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+
+  font-size: 10px;
+
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  --wdth: 100;
+  --wght: 400;
+  --cntr: 0;
+  --spac: 50;
+  --slnt: 0;
+}
+
+html * {
+  --wdth: inherit;
+  --wght: inherit;
+  --cntr: inherit;
+  --spac: inherit;
+  --slnt: inherit;
+
+  font-variation-settings: 
+    'wdth' var(--wdth), 
+    'wght' var(--wght), 
+    'slnt' var(--slnt), 
+    'CNTR' var(--cntr), 
+    'SPAC' var(--spac);
+}
+
+body {
+	font-size: 1.6em;
+}
+
+/* VIEWPORT */
+
+html, body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  
+  min-width: 280px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+
+  scroll-behavior: smooth;
+}
+
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  flex: 1 0 100%;
+}
