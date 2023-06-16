@@ -1,7 +1,5 @@
 # datavis-lab
 
----
-
 Para seguir esses exercícios sugiro:
 
 - Conhecimento básico em HTML / CSS / JavaScript
