@@ -38,7 +38,7 @@ O verdadeiro poder do D3 está em sua capacidade de permitir fácil manipulaçã
 
 Podemos, por exemplo, transformar um simples [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) num gráfico de mais fácil leitura. 
 
-Através de sua lógica de _data joins_, o D3 também permite a atualização de dados já pré-existente. Devido a complexidade do assunto, usaremos as funções sem mergulhar muito a fundo em seus conceitos. Por isso, recomendo a leitura de [artigos](https://bost.ocks.org/mike/join/) feitos pelo autor do D3, [Mike Bostock](https://observablehq.com/@mbostock), para melhor compreensão de _joins_.
+Através de sua lógica de _data joins_, o D3 também permite a atualização de dados já pré-existente. Devido a complexidade do assunto, usaremos as funções sem mergulhar muito a fundo em seus conceitos e retornaremos a esses assuntos numa aula futura. Por enquanto, recomendo a leitura de [artigos](https://bost.ocks.org/mike/join/) feitos pelo autor do D3, [Mike Bostock](https://observablehq.com/@mbostock), para melhor compreensão de _joins_.
 
 ```js
 const numbers = [ 80, 50, 55, 10, 130, 65 ];
