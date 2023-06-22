@@ -1,0 +1,67 @@
+body {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	gap: 10px;
+}
+
+h1 {
+	font-size: 3em;
+	--wdth: 25;
+	--wght: 900;
+}
+
+#graph {
+	display: flex;
+	font-size: 2em;
+	gap: .5em;
+}
+
+#graph .node[stage="enter"] {
+	color: green;
+}
+#graph .node[stage="update"] {
+	color: blue;
+}
+#graph .node[stage="exit"] {
+	color: red;
+}
+
+/* #graph {
+	flex: 1 1 100%;
+
+	--x: 2;
+	--y: 2;
+
+	display: grid;
+	grid-template-columns: repeat(var(--x), 1fr);
+	grid-template-rows: repeat(var(--y), 1fr);
+	gap: 10px;
+}
+
+#graph .node {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+
+	font-size: 3em;
+	--wght: 700;
+	color: white;
+
+	transition: background-color .2s ease-out;
+}
+
+#graph .node[stage="enter"] {
+	background-color: green;
+}
+#graph .node[stage="update"] {
+	background-color: blue;
+}
+#graph .node[stage="exit"] {
+	background-color: red;
+}
+
+#controls #stop-stream {
+	width: 100%;
+} */
