@@ -5,102 +5,50 @@ await loaded;
 
 // GRAPH
 
-const graph = document.querySelector('#graph');
+const graph = document.querySelector('#graph'),
+			svg = d3.select(graph).append('svg');
 
-let nodes,
-		transitionDuration = 500;
+// let data = [ 1, 2, 3, 4, 5 ],
+// 		circle = svg.selectAll('circle');
 
-const enterData = selection => {
-	return selection
-		.append('div')
-		.classed('node', true)
-		.attr('stage', 'enter')
-		.text(d => d)
-		.style('opacity', 0)
-		.transition(transitionDuration)
-		.style('opacity', 1);
-}
+// circle = circle
+// 	.data(data, d => d)
+// 	.join(
+// 		enter => enter
+// 			.append('circle')
+// 			.attr('r', d => d * 10)
+// 			.attr('cx', d => (d * 5) ** 2)
+// 			.attr('cy', d => (d * 5) ** 2)
+// 			.attr('fill', 'green')
+// 	);
 
-const updateData = selection => {
-	return selection
-		.attr('stage', 'update');
-}
+// setTimeout(() => {
 
-const exitData = selection => {
-	return selection
-		.attr('stage', 'exit')
-		.transition(transitionDuration)
-		.style('opacity', 0)
-		.remove();
-}
-
-const interval = setInterval(() => {
-
-	const chars = d3.shuffle("abcdefghijklmnopqrstuvwxyz".split(""))
-		.slice(0, Math.floor(6 + Math.random() * 20))
-		.sort();
-
-	nodes = d3.select(graph)
-		.selectAll('.node')
-		.data(chars, d => d)
-		.join(
-			enter => enterData(enter),
-			update => updateData(update),
-			exit => exitData(exit)
-		);
-
-}, transitionDuration * 3);
-
-const stop = document.querySelector('#stop-stream');
-
-stop.onclick = evt => {
-	clearInterval(interval);
-}	
-
-
-// STREAM
-
-// const handleStreamData = data => {
-// 	console.log(data);
-
-// 	const xLength = data[0].length,
-// 				yLength = data.length;
-
-// 	graph.style.setProperty('--x', xLength);
-// 	graph.style.setProperty('--y', yLength);
-
-// 	const flat = data.flat();
-
-// 	nodes = d3.select(graph)
-// 		.selectAll('.node')
-// 		.data(flat, (d, i) => `${i}-${d}`)
+// 	circle = circle
+// 		.data(data, d => d)
 // 		.join(
-// 			enter => enterData(enter),
-// 			update => updateData(update),
-// 			exit => exitData(exit)
+// 			enter => enter,
+// 			update => update
+// 				.attr('fill', 'blue')
 // 		);
 
-// }
+// }, 1000);
 
-// const stream = createReadableStream(),
-// 			reader = stream.getReader();
+// setTimeout(() => {
 
-// const handleStreamReader = stream => stream
-// 	.then(readStream)
-// 	.catch(err => console.log(err));
+// 	data = [ 1, 2, 3 ];
 
-// const readStream = ({ done, value }) => {
-// 	handleStreamData( value );
-// 	if (!done) handleStreamReader( reader.read() );
-// }
+// 	circle
+// 		.data(data, d => d)
+// 		.join(
+// 			enter => enter,
+// 			update => update,
+// 			exit => exit
+// 				.attr('fill', 'red')
+// 				.transition(500)
+// 				.style('opacity', 0)
+// 				.transition(10)
+// 				.remove()
+// 		);
 
-// handleStreamReader( reader.read() );
-
-// const stop = document.querySelector('#stop-stream');
-
-// stop.onclick = evt => {
-// 	const reason = 'User has requested to stop stream';
-// 	reader.releaseLock();
-// 	stream.cancel(reason);
-// }	
-
+// }, 2000);

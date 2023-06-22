@@ -4,9 +4,7 @@
 
 - [Uma nova dimensão](#uma-nova-dimensão)
 - [_Thinking with joins_](#thinking-with-joins)
-  - [Enter, Update & Exit](#enter-update-e-exit)
-- [Seleção e mutação](#seleção-e-mutação)
-- [Manipulação de dados](#manipulação-de-dados)
+- [Enter, Update & Exit](#enter-update-e-exit)
 
 ## Uma nova dimensão
 
