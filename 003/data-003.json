@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Brasil",
+    "population": [
+      {"year": 2010, "count": 196655014},
+      {"year": 2011, "count": 199287296},
+      {"year": 2012, "count": 201991000},
+      {"year": 2013, "count": 204809000},
+      {"year": 2014, "count": 207707000},
+      {"year": 2015, "count": 210677000}
+    ]
+  },
+  {
+    "name": "Estados Unidos",
+    "population": [
+      {"year": 2010, "count": 309349689},
+      {"year": 2011, "count": 311592078},
+      {"year": 2012, "count": 313873685},
+      {"year": 2013, "count": 316110030},
+      {"year": 2014, "count": 318301008},
+      {"year": 2015, "count": 320635163}
+    ]
+  },
+  {
+    "name": "China",
+    "population": [
+      {"year": 2010, "count": 1337705000},
+      {"year": 2011, "count": 1344130000},
+      {"year": 2012, "count": 1350695000},
+      {"year": 2013, "count": 1357380000},
+      {"year": 2014, "count": 1364270000},
+      {"year": 2015, "count": 1371220000}
+    ]
+  }
+]
