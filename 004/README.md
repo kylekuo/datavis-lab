@@ -2,18 +2,18 @@
 
 ## Sumário
 
-- Anatomia de uma função
-  - O que são
-  - Argumentos
-  - Bloco de código
-  - Escopo local
-  - Retorno
-- Definindo uma função
-  - Usando a keyword `function`
-  - Atribuindo uma função a uma variável
-  - Funções como métodos
-  - Funções de seta
-- Chamando uma função
+- [Anatomia de uma função](#anatomia-de-uma-função)
+  - [O que são](#o-que-são)
+  - [Argumentos](#argumentos)
+  - [Bloco de código](#bloco-de-código)
+  - [Escopo local](#escopo-local)
+  - [Retorno](#retorno)
+- [Definindo uma função](#definindo-uma-função)
+  - [Usando a keyword `function`](#usando-a-keyword-function)
+  - [Atribuindo uma função a uma variável](#atribuindo-uma-função-a-uma-variável)
+  - [Funções como métodos](#funções-como-métodos)
+  - [_Arrow functions_](#arrow-functions)
+- [Usando função](#usando-funções)
 
 ---
 
@@ -188,7 +188,7 @@ person.birthday();
 console.log(person.age); // Imprime: 25
 ```
 
-### Funções de seta
+### _Arrow functions_
 
 As _arrow functions_ são uma forma mais recente e concisa de declarar funções em JavaScript. Elas possuem uma sintaxe reduzida, são sempre anônimas e oferecem um comportamento específico em relação ao escopo do this.
 
