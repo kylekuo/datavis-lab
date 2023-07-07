@@ -273,3 +273,10 @@ person.sayHi();
 ```
 
 > Em JavaScript, todas as funções na verdade são objetos especiais do tipo `Function`. Isso significa que elas tem acesso a métodos especiais, como `apply`, `call`. Esses métodos também permitem que você chame a função, mas como esses métodos se relacionam com a keyword `this`, que pode ser uma aula por si só, não vou entrar muito em detalhes.
+
+---
+
+Referências:
+- [MDN Javascript Reference: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+- [MDN Javascript Reference: Function Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+- [ES6 In Depth: Arrow functions](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
