@@ -2,9 +2,21 @@
 
 ## Sumário
 
-- [Uma nova dimensão](#uma-nova-dimensão)
-- [_Thinking with joins_](#thinking-with-joins)
-- [Enter, Update & Exit](#enter-update-e-exit)
+- [Dados estruturados e tipos primitivos em JS](#dados-estruturados-e-tipos-primitivos-em-js)
+- [Valores primitivos em JavaScript](#valores-primitivos-em-javascript)
+  - [String](#string)
+  - [Number](#number)
+  - [Boolean](#boolean)
+  - [Null](#null)
+  - [Undefined](#undefined)
+  - [BigInt](#bigint)
+- [Objetos em JavaScript](#objetos-em-javascript)
+- [Diferença entre tipos primitivos e objetos](#diferença-entre-tipos-primitivos-e-objetos)
+- [Objetos wrapper para tipos primitivos](#objetos-wrapper-para-tipos-primitivos)
+- [Objetos especiais](#objetos-especiais)
+  - [Array](#array)
+  - [Set](#set)
+- [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
 
 ---
 
@@ -16,7 +28,7 @@ Nesta aula, portanto, vamos explorar os fundamentos do JavaScript, começando co
 
 ---
 
-## Valores Primitivos em JavaScript
+## Valores primitivos em JavaScript
 
 Em JavaScript, existem 7 tipos primitivos:
 

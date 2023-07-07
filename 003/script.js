@@ -7,8 +7,8 @@ const graph = document.querySelector('#graph'),
 			yearlyData = {};
 
 fetch('./data-003.json')
-	.then( function ( resp ) { 
-		return resp.json() 
+	.then( function ( response ) { 
+		return response.json() 
 	})
 	.then( function ( data ) {
 
@@ -37,8 +37,6 @@ fetch('./data-003.json')
 			const yearDataWrap = yearElement
 				.append('div')
 				.classed('year-data', true);
-
-			console.log(data);
 
 			for (const [country, count] of Object.entries(data)) {
 
