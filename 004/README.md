@@ -28,11 +28,13 @@ Funções são blocos de código reutilizáveis que nos permitem organizar e exe
 Argumentos são valores que a função espera receber. Os parâmetros são opcionais e permitem que a função trabalhe com dados externos. Podemos ter zero, um ou vários parâmetros separados por vírgulas.
 
 > Seguindo o exemplo:
+>
 > ```js
 > function add ( numberOne, numberTwo ) {
 >   return numberOne + numberTwo;
 > }
 > ```
+>
 > `numberOne` e `numberTwo` são os argumentos da função
 
 Parâmetros primitivos são passados para as funções por valor; o valor é passado para a função, mas se a função altera o valor do parâmetro, esta mudança não reflete globalmente ou na função chamada. Se você passar um objeto como um parâmetro e a função alterar as propriedades do objeto, essa mudança é visível fora da função.
@@ -66,7 +68,6 @@ console.log(person.name); // Imprime: "John"
 changeName(person);
 console.log(person.name); // Imprime: "Kyle"
 ```
-
 
 ### Bloco de código
 
@@ -128,6 +129,7 @@ function add ( numberOne, numberTwo ) {
 ```
 
 > Essa forma permite que você defina a função em qualquer lugar do seu código, mesmo antes de chamá-la. Isso ocorre porque as funções declaradas dessa maneira são içadas (hoisted), o que significa que elas são movidas para o topo do escopo em que foram definidas durante a fase de interpretação. Por exemplo, o código a seguir é válido:
+>
 > ```js
 > const five = add( 2, 3 );
 > 
@@ -277,6 +279,7 @@ person.sayHi();
 ---
 
 Referências:
+
 - [MDN Javascript Reference: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 - [MDN Javascript Reference: Function Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 - [ES6 In Depth: Arrow functions](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
