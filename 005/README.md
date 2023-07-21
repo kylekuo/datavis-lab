@@ -93,11 +93,6 @@ Contras:
 
 ## Canvas
 
-        Introdução ao uso do elemento Canvas HTML para renderização de gráficos.
-        A diferença entre SVG e Canvas e quando escolher cada uma delas.
-        Criando visualizações de dados com Canvas e D3.js.
-        Animações e interatividade em gráficos Canvas.
-
 ```js
 const canvas = wrap
   .append('canvas')
