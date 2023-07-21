@@ -28,7 +28,7 @@ const drawHTMLGraph = data => {
 				.append('div')
 				.classed('node', true)
 				.attr('join', 'enter')
-				.style('--bg', d => "hsl(" + Math.floor( Math.random() * 360 ) + ", 100%, 66%)")
+				.style('--bg', d => d.color)
 				.style('--start', d => radToDeg( d.startAngle ))
 				.style('--end', d => radToDeg( d.endAngle )),
 	
@@ -39,7 +39,7 @@ const drawHTMLGraph = data => {
 				.attr('join', 'exit')
 				.remove()
 	
-		);	
+		);
 
 }
 
@@ -67,7 +67,7 @@ const drawSVGGraph = data => {
 				.attr('join', 'enter')
 				.attr('d', d3.arc().innerRadius(0).outerRadius(size / 2))
 				.style('transform', 'translate(50%, 50%)')
-				.attr('fill', d => "hsl(" + Math.floor( Math.random() * 360 ) + ", 100%, 66%)"),
+				.attr('fill', d => d.color),
 	
 			update => update
 				.attr('join', 'update'),
@@ -111,7 +111,7 @@ const drawCanvasGraph = data => {
 
 		ctx.lineTo( center, center );
 
-		ctx.fillStyle = "hsl(" + Math.floor( Math.random() * 360 ) + ", 100%, 66%)";
+		ctx.fillStyle = point.color;
 
 		ctx.fill();
 
@@ -124,6 +124,12 @@ fetch('./data-005.json')
 	.then(data => {
 
 		const pieData = pie(data);
+
+		for (const point of pieData) {
+			point.color = "hsl(" + Math.floor( Math.random() * 360 ) + ", 100%, 66%)";
+		}
+
+		console.log(pieData);
 		
 		drawHTMLGraph(pieData);
 		drawSVGGraph(pieData);
