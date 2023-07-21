@@ -1,0 +1,83 @@
+body {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	gap: 10px;
+}
+
+h1 {
+	font-size: 3em;
+	--wdth: 25;
+	--wght: 900;
+}
+
+.graph {
+	flex: 0 0 500px;
+	
+	position: relative;
+	height: 500px;
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;
+	border-radius: 5px;
+
+	display: grid;
+	place-items: center;
+}
+
+.graph .label {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.graph .donut {
+	position: relative;
+	width: auto;
+	height: 50%;
+	aspect-ratio: 1;
+}
+
+#html .donut {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#html .donut > * {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#html .node {
+
+	--start: 0;
+	--start-deg: calc( var(--start) * 1deg );
+
+	--end: 0;
+	--end-deg: calc( var(--end) * 1deg );
+
+	--bg: red;
+
+	background: conic-gradient(
+		transparent 0deg,
+		transparent var(--start-deg),
+		var(--bg) var(--start-deg), 
+		var(--bg) var(--end-deg),
+		transparent var(--end-deg),
+		transparent 
+	);
+
+}
+#html .node:hover {
+	filter: drop-shadow(0 0 10px black)
+}
+
+#svg .donut {
+	overflow: visible;
+}
+#svg .node:hover {
+	filter: drop-shadow(0 0 10px black)
+}

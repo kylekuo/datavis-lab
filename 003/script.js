@@ -1,5 +1,5 @@
 import { loaded } from '../@dependencies/js/LoadEvents.js';
-await loaded;
+await loaded();
 
 // GRAPH
 
